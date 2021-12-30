@@ -1,3 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+* {
+    font-family: Acme, sans-serif;
+    color: #666e;
+}
+
+body {
+    background: #CAC2C2;
+}
+
+.recipes:hover {
+    background-color: lightcoral;
+    width: fit-content;
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 0 7px;
+    text-decoration-color: red !important;
+    color: red;
+}
+
+li {
+    padding: 3px 10px;
+}
+
+li::marker {
+    color: red;
+    content: ">";
+}
+
+figcaption p {
+    color: red;
+}
+
+figcaption em {
+    color: red;
+    background-color: lightcoral;
+    border-radius: 12px;
+    padding: 0 4px;
+}
+
 h1 {
-  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+    animation: movingHeader 3s infinite alternate-reverse;
+    width: fit-content;
+    color: #00FFFF;
+    border-radius: 10px 25px;
+    padding: 3px 10px;
+}
+
+@keyframes movingHeader {
+    0% {
+        background-color: red;
+        border-radius: 10px 25px;
+    }
+    50% {
+        border-radius: 25px 10px;
+    }
+    100% {
+        background-color: lightcoral;
+        border-radius: 10px 25px;
+    }
+}
+
+h3 {
+    color: red;
+    background-color: rgba(240, 128, 128, 0.5);
+    border: 2px solid red;
+    border-radius: 10% 30% 10%;
+    width: fit-content;
+    padding: 3px 10px;
+}
+
+img {
+    padding: 0;
+}
+
+.container {
+    overflow: hidden;
+    border: 3px lightcoral dotted;
+    width: fit-content;
+    height: fit-content;
+}
+
+.container img:hover {
+    animation: getIn 5s ease-out both;
+}
+
+@keyframes getIn {
+    0% {
+        transform: scale(1) translate(0, 0);
+        transform-origin: 16% 16%;
+    }
+    100% {
+        transform: scale(1.25) translate(-20px, -15px);
+        transform-origin: top left;
+    }
 }
