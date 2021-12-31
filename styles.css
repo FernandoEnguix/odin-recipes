@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 * {
     font-family: Acme, sans-serif;
-    color: #666e;
+    color: rgba(63, 63, 63, 0.933);
 }
 
 body {
@@ -86,8 +86,13 @@ img {
 }
 
 .container {
+    border-radius: 5%;
     overflow: hidden;
-    border: 3px lightcoral dotted;
+    width: fit-content;
+    height: 400px;
+    border: 3px dotted lightcoral;
+    /* I can't seem to make this border work, so it's out for now (2021.12.31) */
+    /*    border: 3px lightcoral dotted;*/
 }
 
 .container img:hover {
