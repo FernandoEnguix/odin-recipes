@@ -8,13 +8,20 @@ body {
     background: #CAC2C2;
 }
 
-a:hover {
-    color: red;
-}
-
 li::marker {
     color: red;
     content: ">";
+}
+
+li {
+    transition: 0.3s;
+    width: fit-content;
+}
+
+li:hover {
+    color: black;
+    background-color: lightcoral;
+    border-radius: 12px;
 }
 
 figcaption p {
@@ -59,10 +66,6 @@ h3 {
     padding: 3px 10px;
 }
 
-img {
-    padding: 0;
-}
-
 a {
     padding: 3px 10px;
     width: fit-content;
@@ -75,13 +78,16 @@ a:hover {
     border: 3px solid red;
     border-radius: 10px;
     width: fit-content;
+    color: black;
+}
+
+img {
+    padding: 0;
 }
 
 .container {
     overflow: hidden;
     border: 3px lightcoral dotted;
-    width: fit-content;
-    height: fit-content;
 }
 
 .container img:hover {
@@ -97,4 +103,19 @@ a:hover {
         transform: scale(1.25) translate(-20px, -15px);
         transform-origin: top left;
     }
+}
+
+#blueCheesePhoto {
+    width: 600px;
+    height: auto;
+}
+
+#calypsoPhoto {
+    width: 400px;
+    height: auto;
+}
+
+#frapuccinoPhoto {
+    width: 400px;
+    height: auto;
 }
